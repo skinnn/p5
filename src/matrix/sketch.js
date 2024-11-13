@@ -90,7 +90,6 @@ class Stream {
 function fullScreen() {
 	let fullscreenOn = false;
 	document.addEventListener('keypress', async (e) => {
-		console.log('A', e);
 		if (e.key === 'f' || e.key === 'F') {
 			if (!fullscreenOn) {
 				await openFullscreen();
